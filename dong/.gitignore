@@ -1,0 +1,4 @@
+# Ignore environment files
+.env
+# IDEs and OS files
+.vscode/
