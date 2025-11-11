@@ -5,13 +5,13 @@ from datetime import datetime
 import os
 from dotenv import load_dotenv
 
-env_path = os.path.join(os.path.dirname(__file__), '..', '.env')
+env_path = os.path.join(os.path.dirname(__file__),'.env')
 load_dotenv(dotenv_path=env_path)
 
 
 client_id = os.getenv('REDDIT_CLIENT_ID')
 client_secret = os.getenv('REDDIT_CLIENT_SECRET')
-
+print(client_id)
 username = os.getenv('REDDIT_USERNAME')
 password = os.getenv('REDDIT_PASSWORD')
 
