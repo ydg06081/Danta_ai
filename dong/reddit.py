@@ -53,7 +53,7 @@ reddit = praw.Reddit(
 )
 
 # 특정 커뮤니티 지정
-subreddit_name = "machinelearning"
+subreddit_name = "stocks"
 subreddit = reddit.subreddit(subreddit_name)
 
 # 최근 1개 글 수집
@@ -71,6 +71,11 @@ for post in subreddit.new(limit=1):
     })
 
 print(f"✅ {len(posts)}개의 글을 수집했습니다.")
-print(posts[0]["selftext"])
+
+# for _ in range(len(posts)):
+#     print(posts[_]["selftext"])
+
+print("✅ Reddit 크롤링 완료")
+print(posts)
 
 
